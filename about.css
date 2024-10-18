@@ -1,0 +1,456 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amethysta', sans-serif;
+}
+
+body {
+    background: #E6D7BB;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: #B3A078;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+    color: #B3A078;
+}
+
+h2 {
+    position: absolute;
+    left: 80px; 
+    top: 7.5%;
+    transform: translate(0, -50%);
+    text-align: left; 
+    color: #5c4827;
+    z-index: 1;
+    padding: 10px;    
+    font-size: 20px;
+}
+
+
+nav {
+    background: #B3A078;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5c4827;
+}
+
+.logo img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+
+.nav-list {
+    display: flex; 
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: auto; 
+}
+
+
+.nav-list li {
+    margin: 0 10px;
+    border-right: 1px solid #333;
+    padding-right: 10px;
+}
+
+.nav-list li:last-child {
+    border-right: none;
+}
+
+.nav-list a {
+    color: #5c4827;
+    text-decoration: none;  
+}
+
+.nav-list a:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+
+.socialIcons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #5c4827;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+
+.footer {
+    color: #5c4827;
+    padding: 5px;
+    margin-right: 10%;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    margin: 20px auto;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #B3A078;
+}
+
+.heading p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 35px;
+    background: #8F7853;
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-bottom: 50px; 
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img {
+    border-radius: 50%; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+    border-radius: 50%; 
+}
+
+.about-content {
+    flex: 3;
+    padding-left: 20px;
+}
+
+.about-content h2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: white;
+    background: #8F7853;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    background: #8F7853;
+    max-width: 90%; 
+    height: auto;
+}
+
+.about img {
+    margin-top: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.content-about h1{
+    color: #5c4827;
+}
+
+.content-about {
+    background-color: #8F7853; 
+    padding: 20px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    text-align: left; 
+    width: 30%; 
+    float: left;
+    margin-left: 20px; 
+    margin-top: 30px; 
+    color: white;
+}
+
+.content2 {
+    background-color: #8F7853; 
+    padding: 20px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    text-align: left;
+    width: 30%; 
+    clear: both; 
+    margin-top: 50px; 
+    margin-left: 20px; 
+    color: white;
+}
+.content-about {
+    background-color: #8F7853; 
+    padding: 20px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    text-align: left; 
+    width: 30%; 
+    float: left; 
+    margin-left: 20px; 
+    margin-top: 30px; 
+    color: white;
+}
+
+.content2 {
+    background-color: #8F7853; 
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left; 
+    width: 30%; 
+    float: left; 
+    margin-left: 20px; 
+    margin-top: 20px; 
+    color: white;
+}
+.content2 h1{
+    color: #5c4827;
+}
+
+.content3{
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a right-aligned block */
+    float: right; /* use float to move the block to the right */
+    margin-right: 20px; /* add a margin to the right to move it a bit less to the right */
+    margin-top: 20px; /* add a margin to the top to add space above */
+    color: white;
+}
+
+.content3 h1{
+    color: #5c4827;
+}
+
+.content4 {
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a right-aligned block */
+    float: right; /* use float to move the block to the right */
+    margin-right: 20px; /* add a margin to the right to move it a bit less to the right */
+    margin-top: 20px; /* add a margin to the top to add space above */
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content4 h1{
+    color: #5c4827;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer container */
+.footerContainer {
+    width: 100%;
+    padding: 3px;
+    position: relative;
+    margin-top: auto;
+}
+
+footer {
+    background-color: #B3A078;
+    width: 100%;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+    background-color: #5c4827;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none;
+    background-color: #D2B48C;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #5c4827;
+    font-size: 18px;
+}
+
+.video {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 20px; 
+    max-width: 100vw; 
+    margin: 0 auto; 
+    margin-top: 50px; 
+}
+
+.video iframe {
+    width: 30vw; 
+    height: 25vw; 
+    max-width: 1200px; 
+}
+
+.video video {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .hamburger {
+        display: flex; 
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; 
+        width: 100%;
+        background-color: #B3A078;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+    /* Display nav-list when active */
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        padding-right: 0;
+        border-right: none;
+        text-align: left;
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .nav-list {
+        display: flex !important; 
+    }
+
+    .hamburger {
+        display: none; 
+    }
+}
